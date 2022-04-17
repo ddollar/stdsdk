@@ -134,7 +134,7 @@ func marshalValue(f reflect.Value) (string, bool) {
 	switch t := v.(type) {
 	case bool:
 		return fmt.Sprintf("%t", t), true
-	case int, int64:
+	case int, int64, uint, uint64:
 		return fmt.Sprintf("%d", t), true
 	case string:
 		return t, true
