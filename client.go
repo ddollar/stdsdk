@@ -354,7 +354,7 @@ func (c *Client) HandleRequest(req *http.Request) (*http.Response, error) {
 	}
 
 	if err := responseError(res); err != nil {
-		return nil, err
+		return res, err
 	}
 
 	return res, nil
