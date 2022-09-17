@@ -332,7 +332,7 @@ func (c *Client) Request(method, path string, opts RequestOptions) (*http.Reques
 func (c *Client) HandleRequest(req *http.Request) (*http.Response, error) {
 	res, err := DefaultClient.Do(req)
 	if err != nil {
-		return nil, err
+		return res, err
 	}
 
 	if res.StatusCode == 401 {
