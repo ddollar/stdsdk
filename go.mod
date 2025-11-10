@@ -1,4 +1,4 @@
-module github.com/ddollar/stdsdk
+module go.ddollar.dev/stdsdk
 
 go 1.18
 
